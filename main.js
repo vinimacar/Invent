@@ -89,6 +89,7 @@ function addUser(event) {
 // Atualiza a tabela de usuários
 function updateUsersTable() {
     const tbody = document.querySelector('#usersTable tbody');
+    if (!tbody) return; // Evita erro se a tabela não existir
     tbody.innerHTML = '';
     users.forEach(function(user) {
         var row = '<tr>' +
