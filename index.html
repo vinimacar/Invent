@@ -9,6 +9,39 @@
 </head>
 <body>
         <div class="container py-4">
+            <!-- Cadastro de Usuários -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">Cadastro de Usuário</div>
+                <div class="card-body">
+                    <form id="userForm" class="row g-3">
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="userName" placeholder="Nome do usuário" required>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="email" class="form-control" id="userEmail" placeholder="E-mail" required>
+                        </div>
+                        <div class="col-md-2 d-grid">
+                            <button type="submit" class="btn btn-success">Cadastrar Usuário</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h5>Usuários cadastrados</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped" id="usersTable">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Usuários serão inseridos aqui -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
                 <!-- Modal para nome do lançador -->
                 <div class="modal fade" id="launcherModal" tabindex="-1" aria-labelledby="launcherModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
